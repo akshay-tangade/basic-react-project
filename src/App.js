@@ -1,7 +1,7 @@
-import logo from './logo.svg';
-import Expenses from './components/Expenses';
+import Expenses from './components/Expenses/Expenses';
+import NewExpenses from './components/NewExpenses/NewExpenses';
 
-function App() {
+const App = () => {
 
   const expenses = [
     {
@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Lets do this...</h1>
+      <NewExpenses></NewExpenses>
       <Expenses items={expenses}></Expenses>
     </div >
   );
